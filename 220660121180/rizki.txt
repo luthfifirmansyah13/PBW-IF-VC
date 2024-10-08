@@ -1,1 +1,0 @@
-menambahkan direktory kemudian menambahkan sub direktory yang bernama praktikum_#01.kemudian membuat file index.html pada sub direktori praktikum_#01
