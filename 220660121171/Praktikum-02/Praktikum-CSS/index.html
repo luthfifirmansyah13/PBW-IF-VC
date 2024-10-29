@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Pribadi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
     
 </head>
@@ -42,7 +45,8 @@
         </table>
 
         <!-- Hobi -->
-        <h2>Hobi Saya</h2>
+        <h2 class="titleHobi">Hobi Saya</h2>
+         <div class="hobi">
         <ul>
             <li>Editing</li>
             <li>Game</li>
@@ -53,26 +57,26 @@
             <li>Membuat Karya Visual</li>
             <li>Melukis</li>
         </ol>
+         </div>
+        
 
         <!-- Audio -->
         <h2 class="text-center">Lagu Favorit</h2>
-        <audio controls>
+        <audio controls class="musik">
             <source src="audio/Neck Deep _  I Hope This Comes Back To Haunt You _ Hopeless Records (youtube).mp3" type="audio/mpeg">
             Browser Anda tidak mendukung pemutar audio.
         </audio>
 
         <!-- Embed Audio -->
-        <div class="audio-embed">
-            <iframe src="#"
-                style="display:block; border-radius: 6px; border: none; height: 204px; width: 600px;"></iframe>
-            <a href='#'
-                style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">embed-musik</a>
-        </div>
+    
 
         <!-- Video Karya -->
         <h2 class="text-center">Video Karya</h2>
-        <iframe width="640" height="360" src="https://www.tiktok.com/@dazaiii12_/photo/7353285183665130758" frameborder="0"
+        <div class="video">
+            <iframe width="640" height="360" src="https://www.tiktok.com/@dazaiii12_/photo/7353285183665130758" frameborder="0"
             allowfullscreen></iframe>
+        </div>
+        
 
         <!-- Link ke Media Sosial -->
         <h2 class="text-center">Ikuti Saya</h2>
