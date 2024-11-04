@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,11 +16,25 @@
             <h1>Todo List</h1>
         </header>
 
-        <!-- Form Tambah Todo -->
-        <section class="todo-form">
-            <input type="text" id="new-todo" placeholder="Tambah todo baru..." aria-label="Tambah todo baru">
-            <button id="add-todo">Tambah</button>
-        </section>
+        <!-- Kontainer Form dan Penyimpanan -->
+        <div class="form-storage-container">
+            <!-- Form Tambah Todo -->
+            <section class="todo-form">
+                <input type="text" id="todo-title" placeholder="Title" aria-label="Title">
+                <input type="text" id="todo-description" placeholder="Deskripsi" aria-label="Deskripsi todo">
+                <input type="date" id="todo-date" aria-label="Tanggal todo">
+                <input type="time" id="todo-time" aria-label="Waktu todo">
+                <button id="add-todo">Tambah</button>
+            </section>
+
+            <!-- Penyimpanan Data -->
+            <section class="data-storage">
+                <h2>Jadwal</h2>
+                <div id="saved-data">
+                    <!-- Data yang disimpan akan ditampilkan di sini melalui JavaScript -->
+                </div>
+            </section>
+        </div>
 
         <!-- Daftar Todo -->
         <section class="todo-list">
