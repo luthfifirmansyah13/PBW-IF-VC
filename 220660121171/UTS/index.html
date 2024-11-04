@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aplikasi Todo List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Header Aplikasi -->
+        <header>
+            <h1>Todo List</h1>
+        </header>
+
+        <!-- Form Tambah Todo -->
+        <section class="todo-form">
+            <input type="text" id="new-todo" placeholder="Tambah todo baru..." aria-label="Tambah todo baru">
+            <button id="add-todo">Tambah</button>
+        </section>
+
+        <!-- Daftar Todo -->
+        <section class="todo-list">
+            <ul id="todos">
+                <!-- Item Todo akan ditambahkan di sini melalui JavaScript -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
