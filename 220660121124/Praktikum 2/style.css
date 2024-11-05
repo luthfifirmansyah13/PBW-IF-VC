@@ -1,0 +1,139 @@
+/* Reset beberapa gaya default */
+
+
+body, h1, h2, p, ul, ol, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    line-height: 1.6;
+    background: linear-gradient(90deg, rgba(130,136,128,1) 0%, rgb(11, 96, 115) 100%);
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Background transparan */
+    backdrop-filter: blur(10px); /* Efek blur di belakang */
+    border-radius: 15px; /* Sudut melingkar */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Gaya untuk judul */
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk teks */
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Gaya untuk gambar profil */
+.text-center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-center img {
+    width: 200px;
+    height: 200px; /* Tetapkan tinggi sama dengan lebar untuk bentuk bulat */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    border: 2px solid #000000; /* Jika ingin border */
+    object-fit: cover; /* Memastikan gambar terlihat baik */
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px black solid;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table tr th{
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+table tr td{
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #125851;
+}
+
+/* Gaya untuk daftar */
+
+.titleHobi{
+text-align: center;
+}
+
+.hobi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobi > ul {
+    margin-right: 80px;
+}
+
+.musik{
+    margin-left: 250px;
+}
+
+/* Gaya untuk audio dan video */
+.audio-embed {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 8px;
+}
+
+/* Gaya untuk footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+}
