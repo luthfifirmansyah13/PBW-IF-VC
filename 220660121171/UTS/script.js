@@ -3,11 +3,15 @@ const titleInput = document.getElementById('todo-title');
 const descriptionInput = document.getElementById('todo-description');
 const dateInput = document.getElementById('todo-date');
 const timeInput = document.getElementById('todo-time');
+const categoryInput = document.getElementById('todo-category');
+const priorityInput = document.getElementById('todo-priority');
 const addButton = document.getElementById('add-todo');
 const savedDataContainer = document.getElementById('saved-data');
+const deleteSelectedButton = document.getElementById('delete-selected');
 
 // Event listener untuk tombol "Tambah"
 addButton.addEventListener('click', addTodo);
+deleteSelectedButton.addEventListener('click', deleteSelectedItems);
 
 function addTodo() {
     // Ambil nilai dari form input
@@ -15,15 +19,17 @@ function addTodo() {
     const description = descriptionInput.value;
     const date = dateInput.value;
     const time = timeInput.value;
+    const category = categoryInput.value;
+    const priority = priorityInput.value;
 
-    // Validasi input, pastikan tidak ada input yang kosong
-    if (!title || !description || !date || !time) {
+    // Validasi input
+    if (!title || !description || !date || !time || !category || !priority) {
         alert('Harap isi semua kolom.');
         return;
     }
 
     // Simpan data todo ke area penyimpanan
-    const todoData = { title, description, date, time };
+    const todoData = { title, description, date, time, category, priority };
     saveData(todoData);
 
     // Bersihkan input form setelah menambahkan
@@ -31,6 +37,8 @@ function addTodo() {
     descriptionInput.value = '';
     dateInput.value = '';
     timeInput.value = '';
+    categoryInput.value = '';
+    priorityInput.value = '';
 }
 
 // Fungsi untuk menyimpan data dan menampilkan di area penyimpanan
@@ -38,48 +46,48 @@ function saveData(data) {
     // Buat elemen data penyimpanan baru
     const dataItem = document.createElement('div');
     dataItem.classList.add('data-item');
-    dataItem.style.display = "flex"; // Menggunakan flexbox untuk data item
-    dataItem.style.justifyContent = "space-between"; // Memisahkan konten dan tombol hapus
-    dataItem.style.alignItems = "center"; // Menjaga semua elemen tetap sejajar secara vertikal
-    dataItem.textContent = `Judul: ${data.title}, Deskripsi: ${data.description}, Tanggal: ${data.date}, Waktu: ${data.time}`;
 
-    // Buat tombol hapus untuk data item
-    const deleteButton = document.createElement('button');
-    deleteButton.style.backgroundColor = "#FF8A8A";
-    deleteButton.style.color = "White";
-    deleteButton.style.width = "36px";
-    deleteButton.style.height = "36px";
-    deleteButton.style.border = "2px solid white"; // Menambahkan border putih
-    deleteButton.style.display = "flex"; // Menggunakan flexbox
-    deleteButton.style.alignItems = "center"; // Menyejajarkan ikon secara vertikal
-    deleteButton.style.justifyContent = "center"; // Memusatkan ikon dalam tombol
+    // Tambahkan elemen detail untuk judul, deskripsi, tanggal, waktu, kategori, dan prioritas
+    const titleElement = document.createElement('div');
+    titleElement.innerHTML = `<strong>Judul:</strong> ${data.title}`;
+    dataItem.appendChild(titleElement);
 
-    // Ambil SVG dan masukkan ke dalam tombol hapus
-    fetch('/220660121171/UTS/assets/IconDelete.svg')
-        .then(response => response.text())
-        .then(svgData => {
-            // Ubah ukuran ikon dengan menambahkan atribut width dan height
-            const parser = new DOMParser();
-            const svgDoc = parser.parseFromString(svgData, 'image/svg+xml');
-            const svgElement = svgDoc.documentElement;
+    const descriptionElement = document.createElement('div');
+    descriptionElement.innerHTML = `<strong>Deskripsi:</strong> ${data.description}`;
+    dataItem.appendChild(descriptionElement);
 
-            // Set ukuran ikon sesuai keinginan, misalnya 20x20
-            svgElement.setAttribute('width', '20');
-            svgElement.setAttribute('height', '20');
+    const dateTimeElement = document.createElement('div');
+    dateTimeElement.innerHTML = `<strong>Tanggal:</strong> ${data.date}, <strong>Waktu:</strong> ${data.time}`;
+    dataItem.appendChild(dateTimeElement);
 
-            // Masukkan SVG yang sudah diubah ke dalam tombol hapus
-            deleteButton.innerHTML = svgElement.outerHTML;
-        })
-        .catch(error => console.error('Gagal memuat ikon:', error));
+    const categoryElement = document.createElement('div');
+    categoryElement.innerHTML = `<strong>Kategori:</strong> ${data.category}`;
+    dataItem.appendChild(categoryElement);
 
-    // Event listener untuk tombol hapus
-    deleteButton.addEventListener('click', () => {
-        dataItem.remove();
-    });
+    const priorityElement = document.createElement('div');
+    priorityElement.innerHTML = `<strong>Prioritas:</strong> ${data.priority}`;
+    dataItem.appendChild(priorityElement);
 
-    // Tambahkan tombol hapus ke data item
-    dataItem.appendChild(deleteButton);
+    // Tambahkan checkbox untuk menghapus item
+    const deleteCheckbox = document.createElement('input');
+    deleteCheckbox.type = 'checkbox';
+    deleteCheckbox.ariaLabel = 'Pilih untuk dihapus';
+    deleteCheckbox.classList.add('delete-checkbox');
+
+    // Tambahkan checkbox ke data item
+    dataItem.appendChild(deleteCheckbox);
 
     // Tambahkan elemen ke container penyimpanan
     savedDataContainer.appendChild(dataItem);
+}
+
+// Fungsi untuk menghapus semua item yang dipilih
+function deleteSelectedItems() {
+    // Ambil semua checkbox yang tercentang
+    const checkboxes = document.querySelectorAll('.delete-checkbox');
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            checkbox.parentElement.remove();
+        }
+    });
 }
