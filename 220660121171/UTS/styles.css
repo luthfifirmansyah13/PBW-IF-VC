@@ -1,13 +1,15 @@
 /* Reset dasar */
 * {
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 body {
-    font-family:"Montserrat", sans-serif ;
-    background-color: #f4f4f9;
+    background-color:white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,20 +22,17 @@ body {
     width: 90%;
     max-width: 800px;
     padding: 20px;
+    border: 2px solid black;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 0px rgb(0, 0, 0);
 }
 
-.titleContainer{
+.container header{
     display: flex;
-    justify-content: space-around;
 }
 
-.titleContainer :nth-child(1){
-    margin-right: 50px;
-}
-.titleContainer :nth-child(2){
-    margin-right: 40px;
+.container header h1:nth-child(2){
+    margin-left: 300px;
 }
 
 /* Header */
@@ -41,7 +40,7 @@ header h1 {
     font-size: 24px;
     color: #333333;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Kontainer Form dan Penyimpanan */
@@ -62,13 +61,23 @@ header h1 {
 .todo-form input[type="text"],
 .todo-form input[type="date"],
 .todo-form input[type="time"],
-.todo-form button {
+.todo-form select{
+    font-weight: 500;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #000000;
     border-radius: 4px;
     width: 100%;
+    background-color: white;
 }
+
+.todo-form input[type="text"],
+.todo-form input[type="date"],
+.todo-form input[type="time"],
+.todo-form select{
+    outline: none;
+}
+
 
 #todo-title,
 #todo-description,
@@ -77,26 +86,14 @@ header h1 {
     width: 100%; /* Lebar penuh untuk semua input */
 }
 
-.todo-form button {
-    font-weight: bold;
-    color: black;
-    background-color: #e1e6a6;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.todo-form button:hover {
-    background-color: #989c73;
-}
-
 /* Penyimpanan Data */
 .data-storage {
     flex: 1;
     padding: 15px;
-    background-color: #CBDCEB;
+    background-color: #7ED4AD;
     border-radius: 8px;
     border: 2px solid #000000;
+    box-shadow: 6px 6px 0px rgb(0, 0, 0);
 }
 
 .data-storage h2 {
@@ -175,3 +172,36 @@ header h1 {
 .todo-list li button:hover {
     background-color: #c0392b;
 }
+
+.buttonForm{
+    display: flex;
+    gap: 20px;
+}
+
+.buttonForm button{
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: #B03052;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 4px 4px 0px rgb(0, 0, 0);
+    width: 80%;
+    height: 50px;
+}
+
+.buttonForm :nth-child(1){
+    width: 73%;
+}
+
+.buttonForm :hover{
+    background-color: #8f2743;
+}
+
+
+
+
+
