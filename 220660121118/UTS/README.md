@@ -60,16 +60,20 @@ let tasks = {
     afternoon: [],
     evening: []
 };
+```
 
 Setiap tugas dalam array memiliki struktur:
 
+```javascript
 {
     text: string,
     completed: boolean
 }
+```
 
 ## 2. Penambahan Tugas
 
+```javascript
 const addTask = () => {
     const text = taskInput.value.trim();
     const routine = routineType.value;
@@ -83,6 +87,7 @@ const addTask = () => {
         renderTasks();
     }
 };
+```
 
 - Mengambil teks dari input dan jenis rutinitas dari dropdown
 - Menambahkan objek tugas baru ke array yang sesuai
@@ -90,44 +95,53 @@ const addTask = () => {
 
 ## 3. Penghapusan Tugas
 
+```javascript
 const deleteTask = (routine, index) => {
     tasks[routine].splice(index, 1);
     saveTasks();
     renderTasks();
 };
+```
 
 - Menghapus tugas dari array berdasarkan indeks
 - Menyimpan perubahan dan memperbarui tampilan
 
 ## 4. Penandaan Tugas Selesai
 
+```javascript
 checkbox.addEventListener('change', () => {
     task.completed = checkbox.checked;
     li.classList.toggle('completed', task.completed);
     saveTasks();
 });
+```
 
 - Mengubah status completed tugas saat checkbox diubah
 - Memperbarui tampilan dan menyimpan perubahan
 
 ## 5. Penyimpanan Data
 
+```javascript
 const saveTasks = () => {
     localStorage.setItem('routineTasks', JSON.stringify(tasks));
 };
+```
 
+```javascript
 const loadTasks = () => {
     const savedTasks = localStorage.getItem('routineTasks');
     if (savedTasks) {
         tasks = JSON.parse(savedTasks);
     }
 };
+```
 
 - Menyimpan data ke localStorage dalam format JSON
 - Memuat data dari localStorage saat aplikasi dimulai
 
 ## 6. Pembersihan Checkbox
 
+```javascript
 const clearAllCheckboxes = () => {
     for (let routine in tasks) {
         tasks[routine].forEach(task => {
@@ -137,12 +151,14 @@ const clearAllCheckboxes = () => {
     saveTasks();
     renderTasks();
 };
+```
 
 - Mengatur ulang status completed semua tugas menjadi false
 - Menyimpan perubahan dan memperbarui tampilan
 
 ## 7. Penghapusan Semua Data
 
+```javascript
 const clearAllData = () => {
     if (confirm('Are you sure you want to delete all tasks?')) {
         tasks = {
@@ -154,12 +170,14 @@ const clearAllData = () => {
         renderTasks();
     }
 };
+```
 
 - Mereset objek tasks ke keadaan awal setelah konfirmasi
 - Menyimpan perubahan dan memperbarui tampilan
 
 ## 8. Rendering Tampilan
 
+```javascript
 const renderTasks = () => {
     for (let routine in routineContainers) {
         const container = routineContainers[routine];
@@ -171,6 +189,7 @@ const renderTasks = () => {
         });
     }
 };
+```
 
 - Membersihkan kontainer HTML
 - Membuat elemen HTML untuk setiap tugas
@@ -178,6 +197,7 @@ const renderTasks = () => {
 
 ## 9. Responsivitas
 
+```css
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -186,7 +206,7 @@ const renderTasks = () => {
         width: 100%;
     }
 }
-
+```
 - Mengubah layout untuk layar yang lebih kecil
 - Menyesuaikan ukuran dan posisi elemen
 
