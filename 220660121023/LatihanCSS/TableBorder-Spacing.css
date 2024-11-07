@@ -1,0 +1,5 @@
+/* jarak antar sel pada tabel akan diatur sebesar 5 px */
+table {
+    border-spacing: 5px;
+  }
+  

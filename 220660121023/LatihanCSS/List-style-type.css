@@ -1,0 +1,11 @@
+.dari-bullet {
+    list-style-type: square; /* Menggunakan kotak sebagai bullet */
+}
+
+.dari-huruf {
+    list-style-type: upper-alpha; /* Menggunakan huruf kapital sebagai nomor */
+}
+
+.dari-angka {
+    list-style-type: decimal; /* Menggunakan angka biasa sebagai nomor */
+}
