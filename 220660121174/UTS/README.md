@@ -108,4 +108,4 @@ Keterkaitan dengan JavaScript
 Dari struktur HTML ini, dapat diperkirakan bahwa file `script.js` yang disertaka akan menangani logika untuk:
 1. Mengambil input dari formulir.
 2. Menambahkan item todo ke daftar.
-3. Menyimpan dan menampilkan data yang sudah dimasukkan.
+3. Menyimpan dan menampilkan data yang sudah dimasukka.
