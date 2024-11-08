@@ -39,4 +39,4 @@ Penataan CSS
 Fungsionalitas
 - Pengguna dapat mengetik tugas di input teks, kemudian menambahkannya ke daftar dengan tombol "Tambah Tugas".
 - Setiap tugas di daftar dilengkapi dengan tombol "Hapus" untuk menghapusnya dari daftar.
-- Desain responsif memastikan aplikasi tampil baik pada berbagai perangkat.
+- Desain responsif memastikan aplikasi tampil baik pada berbagai perangka.
