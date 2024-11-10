@@ -20,4 +20,4 @@
     Membuat elemen <div> baru untuk setiap item todo yang disebut dataItem kemudian enambahkan elemen-elemen titleElement, descriptionElement, dateTimeElement, categoryElement, dan priorityElement untuk menampilkan detail todo (judul, deskripsi, tanggal, waktu, kategori, dan prioritas) serta menambahkan checkbox untuk setiap item (deleteCheckbox) yang dapat digunakan untuk menandai todo yang akan dihapus.
 
 5. Fungsi deletedSelectedItems()
-    Mengambil semua checkbox dengan class delete-checkbox dan menggunakan forEach untuk memeriksa setiap checkbox apakah dalam kondisi "checked" (tercentang) dan Jika checkbox tercentang, elemen induknya (dataItem) akan dihapus dari DOM.
+    Mengambil semua checkbox dengan class delete-checkbox dan menggunakan forEach untuk memeriksa setiap checkbox apakah dalam kondisi "checked" (tercentang) dan Jika checkbox tercentang, elemen induknya (dataItem) akan dihapus dari DOM
