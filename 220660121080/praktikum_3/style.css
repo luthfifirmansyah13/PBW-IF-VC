@@ -1,0 +1,152 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Center text utility class */
+.text-center {
+    text-align: center;
+}
+
+/* Header and sub-header styling */
+.heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-size: 28px;
+    color: #555;
+    margin: 20px 0 10px;
+}
+
+/* Profile Picture Styling */
+.profile-picture-wrapper {
+    margin: 20px 0;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Description and Blockquote Styling */
+.description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-style: italic;
+    color: #888;
+    border-left: 5px solid #ddd;
+    padding-left: 15px;
+    margin: 20px auto;
+    width: 70%;
+}
+
+/* Experience Table Styling */
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.experience-table th, 
+.experience-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.experience-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.experience-table td {
+    background-color: #fff;
+}
+
+/* Hobbies Section Styling */
+.hobbies-section {
+    margin: 20px 0;
+}
+
+.hobby-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.hobby-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Audio Player Styling */
+.audio-player {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Embed Music Section */
+.audio-embed {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Video Section Styling */
+.video-section iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Social Media Section */
+.social-section a {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    margin-top: 30px;
+}
+
