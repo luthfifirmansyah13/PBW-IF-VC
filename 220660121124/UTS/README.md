@@ -12,7 +12,7 @@ Aplikasi Todo List sederhana yang memungkinkan pengguna untuk menambahkan dan me
 # Teknologi yang Digunakan
 - HTML: Struktur halaman web.
 - CSS: Styling untuk antarmuka pengguna dengan efek transparansi dan blur.
-- JavaScript: Logika untuk interaksi dan manipulasi DOM.
+- JavaScript: Logika untuk interaksi dan manipulasi DOM
 
 # Struktur Proyek
 ├── index.html       # Struktur dasar halaman HTML
