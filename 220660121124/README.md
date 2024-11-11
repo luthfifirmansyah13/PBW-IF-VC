@@ -1,6 +1,6 @@
 # PBW-IF-VC
-## Repository Pemrograman Berbasis Web IF-VA
 
+## Repository Pemrograman Berbasis Web IF-VA
 
 <p align="left">
 <a href="#"><img src="https://komarev.com/ghpvc/?username=PBW-IF-VC&color=blueviolet"></a>
@@ -14,14 +14,14 @@
 ## Alur Pengumpulan Tugas ke Repositori Ini
 
 0. **Fork** Repositori ini.
-1.  Pada hasil _fork_ anda, Buat **Branch** dengan nama **NIM** anda.
+1. Pada hasil _fork_ anda, Buat **Branch** dengan nama **NIM** anda.
 2. Pada _branch_ **NIM** anda, buat direktori dengan nama **NIM** anda.
 3. Didalam direktori **NIM** anda, buat sub direktori dengan nama _**Praktikum #n**_.
    > _Contoh **Praktikum #01** untuk Tugas pada praktikum pertemuan pertama_
 4. Seluruh berkas **Tugas hasil praktikum** disimpan pada direktori **NIM_ANDA**.
    > - Berkas tugas berupa `(source code) selama mengerjakan praktikum`.
 
-Contoh struktur direktori sebagai *berikut:*
+Contoh struktur direktori sebagai _berikut:_
 
     .
     ├── ...
@@ -43,7 +43,6 @@ Contoh struktur direktori sebagai *berikut:*
 - Atau tambahkan **remote** ke repositori ini sebagai **upstream** pada repositori lokal hasil _fork_ anda.
 - Jika anda menambahkan _remote_ pada hasil _fork_, lakukan **merge** pada _branch **master**_ anda dengan _branch **master upstream**_.
 - Untuk cara sinkronisasi hasil _fork_ dengan _upstream_, silahkan baca [Configure a remote for a fork](https://help.github.com/en/articles/configuring-a-remote-for-a-fork) dan [Syncing a fork](https://help.github.com/en/articles/syncing-a-fork).
-
 
 ## Tools Pendukung ⚙️
 
@@ -70,7 +69,6 @@ Contoh struktur direktori sebagai *berikut:*
 4. [conecting github with ssh](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 5. [repository untuk belajar berkontribusi pada open source](https://github.com/firstcontributions/first-contributions)
 
-
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -88,8 +86,8 @@ Contoh struktur direktori sebagai *berikut:*
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <p align="center">
 <a href="#"><img src="https://img.shields.io/github/forks/Pemrograman-Berbasis-Web/PBW-IF-VC?label=fork&style=social"alt="Fork"></a>
