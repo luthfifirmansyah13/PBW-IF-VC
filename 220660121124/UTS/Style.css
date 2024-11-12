@@ -1,0 +1,97 @@
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Gaya untuk container utama */
+.container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); /* Transparansi pada latar belakang */
+            backdrop-filter: blur(15px); /* Efek blur pada kontainer */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Batas tipis */
+            color: #fff; /* Teks putih untuk kontras */
+            text-align: center;
+            width: 300px;
+}
+
+/* Gaya untuk judul */
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Gaya untuk input tugas */
+#todo-input {
+        width: 100%; /* Mengisi seluruh lebar container */
+        box-sizing: border-box; /* Mencegah padding menambah lebar input */
+        padding: 8px; /* Tambahkan padding untuk memberi jarak di dalam input */
+}
+
+/* Gaya untuk tombol tambah */
+#add-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#add-btn:hover {
+    background-color: #218838;
+}
+
+/* Gaya untuk daftar tugas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Gaya untuk tombol hapus */
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+/* Gaya umum untuk body dengan gambar background */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Foto/pexels-suzyhazelwood-1629236.jpg'); /* Ganti dengan path gambar */
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh latar belakang */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+}
+
