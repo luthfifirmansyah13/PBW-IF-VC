@@ -8,8 +8,8 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaeaea;
-    color: #333;
+    background-color: #1885a0bd;
+    color: #0f0d0d;
     line-height: 1.6;
     padding: 20px;
 }
@@ -62,7 +62,7 @@ blockquote {
     margin: 10px 0 20px;
     padding: 10px;
     background-color: #f4f4f4;
-    border-left: 5px solid #a3b929;
+    border-left: 5px solid #b3ca30;
     border-radius: 5px;
 }
 
