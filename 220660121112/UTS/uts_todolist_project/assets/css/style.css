@@ -1,0 +1,106 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  background-image: url("../background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #e0e0ff;
+}
+
+.todo-container {
+  background-color: rgba(25, 25, 50, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 50, 0.6);
+  width: 400px;
+  text-align: center;
+}
+
+.todo-container h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 38px;
+  color: #ff0088;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 6px rgba(179, 164, 255, 0.8);
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input[type="text"],
+.todo-input input[type="date"] {
+  font-family: "Bungee", sans-serif;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0ff;
+}
+
+.todo-input input::placeholder {
+  color: #aaa;
+}
+
+.todo-input button {
+  font-family: "Monoton", sans-serif;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ffae00;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-input button:hover {
+  background-color: #ac7600;
+}
+
+ul.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+li.todo-item {
+  background-color: rgba(35, 35, 60, 0.85);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #e0e0ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-details input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item button.delete-btn {
+  background-color: #7300ff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-item button.delete-btn:hover {
+  background-color: #5100b3;
+}
