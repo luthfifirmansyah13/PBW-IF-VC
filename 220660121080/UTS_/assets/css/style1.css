@@ -1,0 +1,137 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Kolom Form Input Todo */
+.todo-form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    transition: transform 0.2s ease;
+}
+
+.todo-form-container:hover {
+    transform: scale(1.02);
+}
+
+.todo-form-container h2 {
+    color: #4a90e2;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #b0bec5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+    border-color: #4a90e2;
+}
+
+.add-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #357abd;
+}
+
+/* Kolom Daftar Todo */
+.todo-list-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    transition: transform 0.2s ease;
+}
+
+.todo-list-container:hover {
+    transform: scale(1.02);
+}
+
+.todo-list-container h2 {
+    color: #4a90e2;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #e3f2fd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn {
+    color: #e57373;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 1px solid #e57373;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e57373;
+    color: #fff;
+}
