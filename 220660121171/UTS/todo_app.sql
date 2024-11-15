@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS todo_app;
+
+USE todo_app;
+
+CREATE TABLE IF NOT EXISTS todo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    priority VARCHAR(50) NOT NULL
+);
