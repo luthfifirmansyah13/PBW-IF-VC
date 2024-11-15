@@ -1,0 +1,10 @@
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .comment-author {
+    font-weight: bold;
+  }
