@@ -1,0 +1,224 @@
+/* Umum */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #7f87c2);
+    color: #d30303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px; /* Tambahkan padding untuk ruang di dalam */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: auto; /* Agar mengikuti panjang konten */
+    max-width: 800px; /* Batas lebar maksimum */
+    min-width: 500px; /* Batas lebar minimum */
+    text-align: center; /* Tengah untuk teks dalam container */
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Jarak antara logo dan teks */
+    background: rgba(255, 255, 255, 0.2); /* Efek kaca */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h2 .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Notifikasi */
+.notification {
+    display: none; /* Tampilkan dengan JavaScript */
+    background-color: rgba(0, 0, 0, 0.7); /* Transparansi */
+    color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Pastikan notifikasi di atas */
+    animation: fadeIn 0.5s ease-out; /* Efek animasi masuk */
+}
+
+/* Animasi untuk notifikasi */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Daftar tugas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+    background-color: #e8e8e8;
+    transform: translateY(-3px);
+}
+
+.task-text {
+    flex: 1;
+    color: #333;
+    font-size: 1.1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.inline-form {
+    display: inline;
+    margin-left: 10px;
+}
+
+.edit-input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 150px;
+}
+
+button {
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-button {
+    background-color: #ffc107;
+}
+
+.update-button:hover {
+    background-color: #e0a800;
+}
+
+.complete-button {
+    background-color: #28a745;
+}
+
+.complete-button:hover {
+    background-color: #218838;
+}
+
+.complete-button:disabled {
+    background-color: #6c757d;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.submit-button {
+    background-color: #4F70E1;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #375ab8;
+}
+
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-task input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.add-task button {
+    width: 18%;
+    padding: 12px;
+    margin-left: 10px;
+    background-color: #4F70E1;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.add-task button:hover {
+    background-color: #375ab8;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
