@@ -1,6 +1,8 @@
-# FocusList - A Simple Todo List Application
+# TodoList
 
-FocusList adalah aplikasi Todo List sederhana yang membantu Anda mengatur dan melacak tugas-tugas Anda dengan mudah. Dengan antarmuka yang ramah pengguna dan fungsionalitas yang intuitif, Anda dapat dengan cepat menambahkan, menyelesaikan, dan menghapus tugas dari daftar Anda.
+Todolist (daftar tugas) adalah alat atau metode yang digunakan untuk mencatat dan mengorganisir daftar tugas atau pekerjaan yang perlu dilakukan. Todolist membantu individu dalam mengelola waktu dan aktivitas mereka agar lebih terorganisir, efisien, dan produktif. Dalam konteks mahasiswa, todolist sering digunakan untuk merencanakan kegiatan sehari-hari, menyelesaikan tugas kuliah, atau mempersiapkan ujian.
+
+Fungsi Todolist:
 
 ## Fitur Utama
 
@@ -37,10 +39,3 @@ FocusList adalah aplikasi Todo List sederhana yang membantu Anda mengatur dan me
 - **Input Tugas**: Di bagian atas halaman, terdapat form input yang sederhana untuk menambahkan tugas baru, dilengkapi dengan placeholder yang membantu pengguna.
   
 - **Tombol Aksi**: Setiap tugas dalam daftar memiliki tombol aksi yang jelas dan mudah diakses untuk menyelesaikan atau menghapus tugas, membuat interaksi menjadi lebih efisien.
-
-## Instalasi
-
-1. **Kloning repositori ini**:
-   ```bash
-   git clone https://github.com/usep-it/PBW-IF-VC.git
-   cd focuslist
