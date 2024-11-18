@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemrograman Berbasis Web || list-style-type</title>
+    <style>
+        .dari-bullet {
+            list-style-type: square; /* Menggunakan kotak sebagai bullet */
+        }
+
+        .dari-huruf {
+            list-style-type: upper-alpha; /* Menggunakan huruf kapital sebagai nomor */
+        }
+
+        .dari-angka {
+            list-style-type: decimal; /* Menggunakan angka biasa sebagai nomor */
+        }
+    </style>
+    <!-- 
+
+    HTML menyediakan tiga jenis list, yaitu ordered list (daftar berurutan), unordered list (daftar tidak berurutan), dan definition list (daftar definisi).
+    
+    CSS dapat digunakan untuk mengatur tampilan list pada halaman web, seperti mengubah jenis simbol, ukuran, dan jarak antar item dalam list. 
+    Beberapa properti CSS list yang umum digunakan antara lain:
+    
+    1. list-style-type
+    
+    Properti list-style-type digunakan untuk menentukan jenis simbol pada list.
+    Contoh:
+    dari-bullet {
+        list-style-type: square; (Menggunakan kotak sebagai bullet)
+    }
+    
+    .dari-huruf {
+        list-style-type: upper-alpha; (Menggunakan huruf kapital sebagai nomor)
+    }
+    
+    .dari-angka {
+        list-style-type: decimal; (Menggunakan angka biasa sebagai nomor)
+    }
+    
+    -->
+</head>
+<body>
+    <h1>Daftar Belanja</h1>
+    <ul class="dari-bullet">
+        <li>Apel</li>
+        <li>Jeruk</li>
+        <li>Pisang</li>
+    </ul>
+
+    <h1>Daftar Tugas (Huruf)</h1>
+    <ol class="dari-huruf">
+        <li>Bangun pagi</li>
+        <li>Makan sarapan</li>
+        <li>Mulai bekerja</li>
+    </ol>
+
+    <h1>Daftar Tugas (Angka)</h1>
+    <ol class="dari-angka">
+        <li>Siapkan alat tulis</li>
+        <li>Periksa jadwal</li>
+        <li>Ikuti kelas</li>
+    </ol>
+</body>
+</html>
+
+<!--
+
+Penjelasan Tambahan
+
+list-style-type: square; pada elemen <ul> akan mengubah bullet menjadi kotak.
+list-style-type: upper-alpha; pada elemen <ol> akan mengubah angka menjadi huruf kapital (A, B, C, ...).
+list-style-type: decimal; pada elemen <ol class="dari-angka"> akan menampilkan item dengan angka biasa (1, 2, 3, ...).
+
+-->
