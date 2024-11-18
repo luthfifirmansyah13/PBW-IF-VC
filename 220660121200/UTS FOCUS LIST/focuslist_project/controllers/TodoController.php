@@ -1,45 +1,7 @@
 <?php
-// models/Todo.php
-
-class Todo {
-    public $id;
-    public $task;
-    public $is_completed;
-    public $created_at;
-    public $updated_at;
-
-    /**
-     * Konstruktor untuk Todo
-     * @param int $id ID dari todo
-     * @param string $task Tugas dari todo
-     * @param bool $is_completed Apakah todo diselesaikan
-     * @param string $created_at Timestamp pembuatan todo
-     * @param string $updated_at Timestamp pembaharuan todo
-     */
-    public function __construct($id, $task, $is_completed, $created_at, $updated_at) {
-        $this->id = $id;
-        $this->task = $task;
-        $this->is_completed = $is_completed;
-        $this->created_at = $created_at;
-        $this->updated_at = $updated_at;
-    }
-}
-?>
-```
-
-
-
-
-
-
-# Membuat Controller Class
-Controller adalah tempat logika aplikasi berada. `TodoController.php` akan memproses permintaan dan menampilkan hasilnya melalui `view.`
-
-```php
-<?php
 // controllers/TodoController.php
 // Memanggil file TodoModel.php untuk menggunakan class TodoModel
-require_once 'config/Database.php';
+require_once 'models/TodoModel.php';
 /**
  * Kelas yang bertanggung jawab untuk menangani permintaan terkait TodoItems
  */
@@ -91,4 +53,12 @@ class TodoController {
     public function delete($id) {
         return $this->model->deleteTodo($id);
     }
+
+    // controllers/TodoController.php
+    public function edit($id, $task) {
+    return $this->model->updateTodoTask($id, $task);
+    }
+
+    // controllers/TodoController.php
+
 }

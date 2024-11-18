@@ -1,42 +1,35 @@
 <?php
-// index.php
-
-/**
- * File ini adalah titik awal dari aplikasi.
- *
- * Ia menggunakan kelas TodoController untuk menangani berbagai aksi
- * dan kemudian merender tampilan dengan daftar tugas.
- */
-
 // Memanggil file TodoController.php untuk menggunakan class TodoController
 require_once 'controllers/TodoController.php';
 
 $controller = new TodoController();
 $action = $_GET['action'] ?? null;
 
-// Menangani parameter aksi
 switch ($action) {
     case 'add':
-        // Dapatkan tugas dari request
         $task = $_POST['task'] ?? '';
-
-        // Tambahkan tugas ke daftar
         $controller->add($task);
-        break;
+        header("Location: index.php?status=add_success");
+        exit;
+
     case 'complete':
-        // Dapatkan id dari request
         $id = $_GET['id'] ?? '';
-
-        // Tandai tugas sebagai selesai
         $controller->markAsCompleted($id);
-        break;
-    case 'delete':
-        // Dapatkan id dari request
-        $id = $_GET['id'] ?? '';
+        header("Location: index.php?status=complete_success");
+        exit;
 
-        // Hapus tugas dari daftar
+    case 'delete':
+        $id = $_GET['id'] ?? '';
         $controller->delete($id);
-        break;
+        header("Location: index.php?status=delete_success");
+        exit;
+
+    case 'edit':
+        $id = $_GET['id'] ?? '';
+        $task = $_POST['task'] ?? '';
+        $controller->edit($id, $task);
+        header("Location: index.php?status=edit_success");
+        exit;
 }
 
 // Dapatkan daftar tugas
