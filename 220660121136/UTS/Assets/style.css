@@ -1,0 +1,134 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../Praktikum1html/images/bg\ bulutangkis.jpg);
+    background-position: center; /* Memastikan gambar berada di tengah */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    background-size: cover; /* Gambar menyesuaikan ukuran layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Styling for the Todo List container */
+.todo-container {
+    background-color: rgba(51, 51, 51, 0.8); 
+    width: 450px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Title styling */
+h1 {
+    font-size: 30px;
+    color: #0015ff;
+    margin-bottom: 30px;
+}
+
+/* Input box and button styling */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 1s;
+}
+
+button:hover {
+    background-color: #0df218;
+}
+
+/* Styling for the Todo List items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Todo item styling */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform 1s ease, background-color 1s ease;
+}
+
+/* Strikethrough for completed tasks */
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button styling */
+li button.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Animation for fadeIn effect */
+@keyframes fadeI {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .todo-container {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+}
