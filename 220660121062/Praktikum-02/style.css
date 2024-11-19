@@ -29,12 +29,12 @@ body {
 /* Gaya untuk judul */
 h1 {
     text-align: center;
-    color: #000000;
+    color: #aa0e0e;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #000000;
+    color: #3b0707;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -51,7 +51,7 @@ p {
 /* Gaya untuk gambar profil */
 .gambar {
     text-align: center;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .gambar img {
