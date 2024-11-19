@@ -50,6 +50,12 @@ form {
     justify-content: space-between;
 }
 
+.search-box {
+    width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+    padding: 5px;
+    font-size: 14px;
+}
+
 input[type="text"] {
     flex: 1;
     padding: 10px;
