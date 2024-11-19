@@ -37,6 +37,3 @@ Tampilan Antarmuka
 - Input Tugas: Di bagian atas halaman, terdapat form input yang sederhana untuk menambahkan tugas baru, dilengkapi dengan placeholder yang membantu pengguna.
   
 - Tombol Aksi: Setiap tugas dalam daftar memiliki tombol aksi yang jelas dan mudah diakses untuk menyelesaikan atau menghapus tugas, membuat interaksi menjadi lebih efisien.
-
-# ini adalah tampilan TodoList nya
-- Tampilan (<Screenshot 2024-11-19 074438.png>)
