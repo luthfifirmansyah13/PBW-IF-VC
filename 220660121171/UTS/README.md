@@ -1,25 +1,27 @@
-# Aplikasi Todo List
+# **Aplikasi Todo List**
 
-Aplikasi Todo List berbasis web untuk mengelola tugas harian. Dibangun menggunakan PHP, JavaScript, dan MySQL.
-
-## Fitur
-
-- **Tambah Tugas**: Input judul, deskripsi, tanggal, waktu, kategori, dan prioritas.
-- **Lihat Tugas**: Menampilkan daftar tugas dalam wadah dengan scroll jika data melebihi batas.
-- **Hapus Tugas**: Pilih tugas dan hapus secara massal.
+Aplikasi Todo List sederhana untuk mengelola tugas, dibuat menggunakan **PHP** dan **MySQL**. Aplikasi ini memungkinkan pengguna untuk menambahkan, melihat, dan menghapus tugas dengan kategori, prioritas, dan batas waktu yang dapat diatur.
 
 ---
 
-## Teknologi
-
-- **Frontend**: HTML, CSS, JavaScript (AJAX menggunakan Fetch API).
-- **Backend**: PHP.
-- **Database**: MySQL.
+## **Fitur**
+- **Tambah Tugas Baru** dengan detail berikut:
+  - **Judul**: Nama tugas.
+  - **Deskripsi**: Penjelasan singkat mengenai tugas.
+  - **Tanggal**: Tenggat waktu tugas.
+  - **Waktu**: Jam tenggat waktu.
+  - **Kategori**: Pilih antara "Pekerjaan" atau "Pribadi."
+  - **Prioritas**: Pilih "Tinggi," "Sedang," atau "Rendah."
+- **Lihat Semua Tugas** dalam daftar yang rapi.
+- **Hapus Beberapa Tugas Sekaligus** dengan memilihnya.
+- Validasi untuk mencegah pengisian data yang tidak lengkap atau duplikat.
 
 ---
 
-## Instalasi
+## **Teknologi yang Digunakan**
+- **Backend**: PHP (Procedural dan OOP)
+- **Frontend**: HTML, CSS (Desain kustom dengan responsif)
+- **Database**: MySQL (untuk penyimpanan tugas secara permanen)
+- **Server Web**: Apache (melalui XAMPP)
 
-1. **Clone Proyek**
-   ```bash
-   git clone https://github.com/MuhammadAnwar25/PBW-IF-VC.git
+---
