@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link ke Font Awesome -->
+</head>
+
+<body>
+    <!-- Pemilih Warna Latar Belakang -->
+    <div class="color-picker">
+        <p>Pilih Warna Latar Belakang:</p>
+        <button onclick="ubahWarnaLatar('#f4f4f4')">Default</button>
+        <button onclick="ubahWarnaLatar('#ffffff')">Putih</button>
+        <button onclick="ubahWarnaLatar('#ffefd5')">Krem</button>
+        <button onclick="ubahWarnaLatar('#d5f3fe')">Biru Muda</button>
+        <input type="color" onchange="ubahWarnaLatar(this.value)" aria-label="Pemilih warna kustom">
+    </div>
+
+    <!-- Kontainer Utama -->
+    <div class="container">
+        <h1 class="text-center">Portofolio Pribadi</h1>
+
+        <!-- Gambar Profil dan Identitas Diri -->
+        <div class="profile-container">
+            <div class="gambar">
+                <img src="img/foto.jpg" alt="Gambar Profil" width="200px">
+            </div>
+            <div class="identitas">
+                <h2>Identitas Diri</h2>
+                <div class="identitas-item">
+                    <span class="label">Nama</span>
+                    <span class="value">: USEP SUHERMAN</span>
+                </div>
+                <div class="identitas-item">
+                    <span class="label">Bidang</span>
+                    <span class="value">: IT</span>
+                </div>
+                <div class="identitas-item">
+                    <span class="label">Kontak</span>
+                    <span class="value">: +6281-3249-xxxx</span>
+                </div>
+                <div class="identitas-item">
+                    <span class="label">Email</span>
+                    <span class="value">: suhermanusep30@gmail.com</span>
+                </div>
+                <div class="identitas-item">
+                    <span class="label">Alamat</span>
+                    <span class="value">: Buahdua - Sumedang, Jawa Barat 45392.</span>
+                </div>
+            </div>           
+        </div>
+
+        <!-- Tentang Saya -->
+        <h2 class="text-center">Tentang Saya</h2>
+        <p class="text-center">Halo! Nama saya Usep Suherman, seorang mahasiswa Informatika yang penuh semangat di Universitas Sebelas April Sumedang. Saya sangat tertarik pada teknologi dan inovasi, terutama dalam pengembangan perangkat lunak dan analisis data.</p>
+        
+        <!-- Pengalaman Kerja -->
+        <h2 class="text-center">Pengalaman Kerja</h2>
+        <table>
+            <tr>
+                <th>Posisi</th>
+                <th>Bidang</th>
+                <th>Tahun</th>
+            </tr>
+            <tr>
+                <td>Operator Satuan Pendidikan</td>
+                <td>Pendidikan</td>
+                <td>2022 - Sekarang</td>
+            </tr>
+            <tr>
+                <td>Anggota KPPS</td>
+                <td>Pemilihan Umum</td>
+                <td>Januari - Februari 2024</td>
+            </tr>
+        </table>
+
+        <!-- Hobi Saya -->
+        <h2>Hobi Saya</h2>
+        <div class="hobi-container">
+            <div class="hobi-item">
+                <h3>✈️ Travelling</h3>
+                <p>Saya suka menjelajahi tempat-tempat baru dan mempelajari budaya berbeda di setiap perjalanan.</p>
+            </div>
+            <div class="hobi-item">
+                <h3>🏋️‍♂️ Olahraga</h3>
+                <p>Aktivitas fisik seperti berlari dan fitness adalah cara saya menjaga kesehatan.</p>
+            </div>
+            <div class="hobi-item">
+                <h3>🎮 Game</h3>
+                <p>Permainan video adalah hobi saya, dan saya menikmati berbagai jenis game, dari RPG hingga strategi.</p>
+            </div>
+        </div>
+
+        <!-- Lagu Favorit -->
+        <h2 class="text-center">Lagu Favorit</h2>
+        <div class="audio-container">
+            <iframe src="https://open.spotify.com/embed/track/4HPxh6IkRxCkb3T06Pltch" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/0fiKmieZ6xzoolzNOC3Fxi" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <!-- Video Karya -->
+        <h2 class="text-center">Video Karya</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/uKQFVWTpd3c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Link ke Media Sosial -->
+        <h2 class="text-center">Ikuti Saya</h2>
+        <p class="text-center social-icons">
+            <a href="https://www.instagram.com/usepsherman_?igsh=dmlweW1od2ZzMHBp" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://s.id/5UH3RM4N" target="_blank">
+                <i class="fas fa-link"></i>
+            </a>
+        </p>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Usep Suherman. Semua hak dilindungi.
+        </footer>
+    </div>
+
+    <!-- Script JavaScript untuk Mengubah Warna Latar -->
+    <script>
+        function ubahWarnaLatar(warna) {
+            document.body.style.backgroundColor = warna;
+        }
+    </script>
+</body>
+
+</html>

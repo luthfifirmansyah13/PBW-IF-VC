@@ -1,0 +1,226 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for layout */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Text center class */
+.text-center {
+    text-align: center;
+}
+
+/* Main title */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Profile container */
+.profile-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Add margin for spacing */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Gambar profile styles */
+.gambar img {
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px; /* Space between image and identity */
+}
+
+/* Identitas Diri */
+.identitas {
+    background: #2980b9; /* Warna latar belakang */
+    color: #ecf0f1; /* Warna teks */
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: justify;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk kesan 3D */
+}
+
+/* Gaya judul "Identitas Diri" */
+.identitas h2 {
+    color: #000000; /* Warna teks judul */
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Bayangan teks */
+    margin-bottom: 15px;
+}
+
+/* Gaya label dan value identitas */
+.identitas-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.label {
+    font-weight: bold;
+    color: #ecf0f1;
+    width: 30%; /* Menyesuaikan lebar label */
+}
+
+.value {
+    width: 65%;
+    color: #ecf0f1;
+}
+
+/* Garis bawah untuk setiap item */
+.identitas-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Garis bawah tipis */
+    padding-bottom: 10px;
+}
+
+/* Pemilih warna latar belakang */
+.color-picker {
+    background: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-picker p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.color-picker button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.color-picker button:hover {
+    background: #1abc9c;
+}
+
+.color-picker input[type="color"] {
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
+    margin: 10px 0 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #a3b929;
+    border-radius: 5px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Hobi styles */
+.hobi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hobi-item {
+    background: #ecf0f1;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hobi-item:hover {
+    transform: scale(1.05);
+}
+
+/* List styles */
+ul, ol {
+    margin: 10px 0 20px 20px;
+}
+
+/* Audio player styles */
+.audio-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Video iframe styles */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Gaya untuk ikon media sosial */
+.social-icons a {
+    margin: 0 10px;
+    color: #2980b9;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1abc9c;
+}

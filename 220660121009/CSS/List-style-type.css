@@ -1,0 +1,8 @@
+
+ul {
+    list-style-type: circle; /* Ganti dengan square, disc, atau none untuk jenis bullet lain */
+  }
+  
+  ol {
+    list-style-type: decimal; /* Ganti dengan upper-roman, lower-roman, atau huruf untuk jenis numbering lain */
+  }
