@@ -1,0 +1,198 @@
+/* Reset beberapa gaya default */
+body, h1, h2, p, ul, ol, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.6;
+    background: linear-gradient(90deg, rgba(130, 136, 128, 1) 0%, rgba(11, 115, 14, 1) 100%);
+    color: #333;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Background transparan */
+    backdrop-filter: blur(10px); /* Efek blur di belakang */
+    border-radius: 15px; /* Sudut melingkar */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Gaya untuk judul */
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Animasi fade-in untuk judul */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h2 {
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+/* Gaya untuk teks */
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Gaya untuk gambar profil */
+.gambar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gambar img {
+    width: 200px;
+    height: 200px; /* Tetapkan tinggi sama dengan lebar untuk bentuk bulat */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    border: 2px solid #000000; /* Jika ingin border */
+    object-fit: cover; /* Memastikan gambar terlihat baik */
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table th, table td {
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Gaya untuk daftar Hobi */
+.titleHobi {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.hobi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hobi > ul, .hobi > ol {
+    margin-right: 40px;
+}
+
+.musik {
+    margin-left: 250px;
+}
+
+/* Gaya untuk audio dan video */
+.audio-embed {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 360px;
+}
+
+/* Gaya untuk footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsivitas untuk tampilan kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .gambar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .video iframe {
+        height: 250px;
+    }
+
+    .hobi {
+        flex-direction: column;
+    }
+
+    .hobi > ul, .hobi > ol {
+        margin: 10px 0;
+    }
+}
+
+/* Gaya untuk tombol bahasa */
+.language-toggle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.language-toggle button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+
+.language-toggle button:hover {
+    background-color: #45a049;
+}
