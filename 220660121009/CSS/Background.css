@@ -1,0 +1,9 @@
+
+body {
+  background-color: #f0f0f0; /* Warna latar belakang abu-abu muda */
+}
+
+.container {
+  background-color: white; /* Warna latar belakang putih untuk container */
+  padding: 20px;
+}

@@ -1,0 +1,11 @@
+
+.case-study {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .case-study-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
