@@ -1,22 +1,175 @@
-/* Gaya untuk kontainer proyek dan pengalaman */
-#project-container, #experience-container {
-    margin-top: 20px;
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.project-item, .experience-item {
-    background-color: #f9f9f9;
-    padding: 10px;
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for layout */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Text center class */
+.text-center {
+    text-align: center;
+}
+
+/* Main title */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Profile container */
+.profile-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Add margin for spacing */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Gambar profile styles */
+.gambar img {
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px; /* Space between image and identity */
+}
+
+/* Identitas Diri */
+.identitas {
+    background: #1e78b9; /* Ganti warna latar belakang menjadi hitam */
+    color: rgb(0, 0, 0); /* Teks tetap putih untuk kontras */
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1; /* Allow the identitas to take up remaining space */
+}
+/* Gaya untuk label identitas */
+.label {
+    display: inline-block; /* Membuat label menjadi inline block */
+    width: 100px; /* Mengatur lebar label untuk alignment */
+    font-weight: bold; /* Membuat label menjadi tebal */
+}
+
+
+/* Section headings */
+h2 {
+    color: #2980b9;
+    margin-top: 20px;
     margin-bottom: 10px;
-    border-left: 4px solid #2980b9;
+    font-size: 1.8em;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+.identitas h2{
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
+    margin: 10px 0 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #a3b929;
     border-radius: 5px;
 }
 
-.project-item h3, .experience-item h3 {
-    color: #2980b9;
-    margin: 0;
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #2980b9;
+    color: white;
 }
 
-.year {
-    font-style: italic;
-    color: #666;
+/* Hobi styles */
+.hobi-container {
+    display: flex; /* Use flexbox to arrange hobby items */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items */
 }
+
+.hobi-item {
+    background: #ecf0f1; /* Light background for hobby items */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    width: 200px; /* Fixed width for uniformity */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover */
+}
+
+.hobi-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* List styles */
+ul, ol {
+    margin: 10px 0 20px 20px; /* Indent lists */
+}
+
+/* Audio player styles */
+.audio-container {
+    display: flex; /* Use flexbox for audio players */
+    justify-content: center; /* Center audio players */
+    gap: 10px; /* Space between audio players */
+}
+
+/* Video iframe styles */
+iframe {
+    display: block;
+    margin: 20px auto; /* Center video */
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 30px; /* Space above footer */
+    font-size: 0.9em; /* Smaller font for footer */
+    color: #555; /* Gray color */
+}
+/* Gaya untuk ikon media sosial */
+.social-icons a {
+    margin: 0 10px; /* Menambahkan jarak horizontal antara ikon */
+    color: #2980b9; /* Warna ikon */
+    font-size: 1.5em; /* Ukuran ikon */
+    transition: color 0.3s; /* Efek transisi pada hover */
+}
+
+.social-icons a:hover {
+    color: #1abc9c; /* Warna saat hover */
+}
+
