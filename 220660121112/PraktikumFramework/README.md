@@ -41,14 +41,14 @@ Tampilan halaman **Login**:
 ## **5. Dashboard Laravel**
 
 Tampilan halaman **Dashboard**:  
-![Dashboard Page](https://i.imgur.com/3GLHTlG.png)
+![Dashboard Page](https://i.imgur.com/Q07QN4N.png)
 
 ---
 
 ## **6. Manage Posts Laravel**
 
 Tampilan halaman **Manage Posts**:  
-![Manage Posts Page](https://i.imgur.com/3GLHTlG.png)
+![Manage Posts Page](https://i.imgur.com/HKlKxqn.png)
 
 ---
 
