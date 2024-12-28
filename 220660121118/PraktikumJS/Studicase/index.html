@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Judul Halaman -->
+        <h1 class="text-center">Portofolio Pribadi</h1>
+
+        <!-- Gambar Profil -->
+        <div class="text-center">
+            <img src="Image/profil.jpeg"
+                alt="Gambar Profil">
+        </div>
+
+        <!-- Tentang Saya -->
+        <h2 class="text-center">Muhammad Raihan</h2>
+        <p class="text-center">Selamat datang di portofolio saya! Saya adalah seseorang yang penuh dengan semangat</p>
+        <blockquote class="text-center">"Kreativitas adalah intelijensi yang bersenang-senang." - Albert Einstein
+        </blockquote>
+
+        <!-- Pengalaman Kerja -->
+        <h2 class="text-center">Pengalaman Kerja</h2>
+        <table>
+            <tr>
+                <th>Posisi</th>
+                <th>Perusahaan</th>
+                <th>Tahun</th>
+            </tr>
+            <tr>
+                <td>Coach Renang</td>
+                <td>KSAC Sumedang</td>
+                <td>2022 - on going</td>
+            </tr>
+            <tr>
+                <td>Freelance</td>
+                <td>Freelance</td>
+                <td>on going</td>
+            </tr>
+        </table>
+
+        <h2 class="text-center">Hobi Saya</h2>
+<div class="carousel-wrapper">
+    <div class="hobi-carousel">
+        <div class="hobi-card">
+            <img src="Image/renang1.jpeg" alt="Berenang">
+            <p>Berenang</p>
+        </div>
+        <div class="hobi-card">
+            <img src="Image/game.jpeg" alt="Bermain Game">
+            <p>Bermain Game</p>
+        </div>
+        <div class="hobi-card">
+            <img src="Image/garut_sunset.jpeg" alt="Hobi Fotografi">
+            <p>Fotografi</p>
+        </div><div class="hobi-card">
+            <img src="Image/noma.jpeg" alt="Nongkrong">
+            <p>Nongkrong</p>
+        </div>
+        <div class="hobi-card">
+            <img src="Image/coding.jpeg" alt="Hobi Fotografi">
+            <p>Coding</p>
+        </div>
+        <div class="hobi-card">
+            <img src="Image/biliard.jpeg" alt="Hobi Biliard">
+            <p>Biliard</p>
+        </div>
+        <div class="hobi-card">
+            <img src="Image/mancing.jpeg" alt="Hobi Mancing">
+            <p>Memancing</p>
+        </div>
+        <div class="hobi-card">
+            <img src="Image/Bioskop.jpeg" alt="Hobi Menonton Film">
+            <p>Menonton Film</p>
+        </div>
+    </div>
+    <div class="carousel-buttons">
+        <button class="carousel-btn" id="prev" aria-label="Sebelumnya">❮</button>
+        <button class="carousel-btn" id="next" aria-label="Selanjutnya">❯</button>
+    </div>
+</div>
+
+        
+
+<h2 class="text-center">Lagu Favorit</h2>
+<div class="song-card">
+    <div class="song-info">
+        <img src="Image/image.png" alt="Cover Album" class="song-cover">
+        <div class="song-details">
+            <h3>I Don't Love You</h3>
+            <p>My Chemical Romance</p>
+        </div>
+    </div>
+    <audio controls>
+        <source src="audio/My Chemical Romance - I Don't Love You [Official Music Video] [HD].mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutar audio.
+    </audio>
+</div>
+
+
+<h2 class="text-center">Video Karya</h2>
+<div class="video-card">
+    <iframe 
+        id="video" 
+        width="100%" 
+        height="315" 
+        src="video/onetap.mp4" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <div class="video-overlay" onclick="toggleVideo()">
+        <div class="play-pause-icon">
+            <span id="play-icon">▶</span>
+            <span id="pause-icon" style="display:none;">❚❚</span>
+        </div>
+        <h3>Valorant berusaha OneTap</h3>
+    </div>
+</div>
+
+<h2 class="text-center">Album Fotografi</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="Image//garut_sunset.jpeg" alt="Foto 1" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/darkness1.jpeg" alt="Foto 2" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/darkness2.jpeg" alt="Foto 3" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/kolam_garut.jpeg" alt="Foto 4" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/brontak.jpeg" alt="Foto 4" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/brontak2.jpeg" alt="Foto 4" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/noma.jpeg" alt="Foto 4" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="Image/renang1.jpeg" alt="Foto 4" class="gallery-image">
+    </div>
+    
+</div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Muhammad Raihan. Semua hak dilindungi.
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
