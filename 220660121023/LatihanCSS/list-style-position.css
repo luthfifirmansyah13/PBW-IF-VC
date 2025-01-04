@@ -1,0 +1,7 @@
+ul.a {
+    list-style-position: outside; /* Bullet berada di luar daftar */
+  }
+  
+  ul.b {
+    list-style-position: inside; /* Bullet berada di dalam daftar */
+  }
