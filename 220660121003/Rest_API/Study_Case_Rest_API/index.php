@@ -39,6 +39,8 @@ switch ($action) {
         break;
 }
 
+require_once 'controllers/TodoController.php';
+
 // Dapatkan daftar tugas
 $todos = $controller->index();
 
