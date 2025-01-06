@@ -1,33 +1,78 @@
-// Fungsi untuk menghasilkan warna acak
-function generateRandomColor() {
-    var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    return randomColor;
-}
+// Data proyek yang akan ditampilkan
+const projects = [
+    {
+        title: "Website Portfolio",
+        description: "Website portofolio interaktif menggunakan HTML, CSS, dan JavaScript."
+    },
+    {
+        title: "Aplikasi To-Do List",
+        description: "Aplikasi sederhana untuk mencatat tugas harian, menggunakan JavaScript untuk fungsi CRUD."
+    },
+    {
+        title: "Login Page",
+        description: "Membuat Login page untuk jaringan wifi mikrotik."
+    }
+];
 
-// Mengubah warna latar belakang halaman secara acak
-function changeBackgroundColor() {
-    document.body.style.backgroundColor = generateRandomColor();
-}
+// Data pengalaman kerja yang akan ditampilkan
+const experiences = [
+    {
+        position: "Kelompok kerja Rw05 Desa Margamekar",
+        company: "Bendahara",
+        year: "Mulai dari 2019-sekarang",
+        description: "Bertanggung jawab untuk pemeliharaan keuangan"
+    },
+];
 
-// Menampilkan pesan sambutan
-function showWelcomeMessage() {
-    alert("Selamat datang di portofolio saya");
-}
-
-// Fungsi untuk menampilkan proyek
+// Fungsi untuk menampilkan daftar proyek
 function displayProjects() {
-    // Implementasi untuk menampilkan proyek
+    const projectContainer = document.getElementById('project-container');
+    projects.forEach(project => {
+        // Membuat elemen untuk setiap proyek
+        const projectItem = document.createElement('div');
+        projectItem.classList.add('project-item');
+        
+        const title = document.createElement('h3');
+        title.textContent = project.title;
+        
+        const description = document.createElement('p');
+        description.textContent = project.description;
+        
+        projectItem.appendChild(title);
+        projectItem.appendChild(description);
+        projectContainer.appendChild(projectItem);
+    });
 }
 
-// Fungsi untuk menampilkan pengalaman
+// Fungsi untuk menampilkan pengalaman kerja
 function displayExperience() {
-    // Implementasi untuk menampilkan pengalaman
+    const experienceContainer = document.getElementById('experience-container');
+    experiences.forEach(experience => {
+        // Membuat elemen untuk setiap pengalaman kerja
+        const experienceItem = document.createElement('div');
+        experienceItem.classList.add('experience-item');
+        
+        const position = document.createElement('h3');
+        position.textContent = `${experience.position} - ${experience.company}`;
+        
+        const year = document.createElement('span');
+        year.textContent = experience.year;
+        year.classList.add('year');
+
+        const description = document.createElement('p');
+        description.textContent = experience.description;
+        
+        experienceItem.appendChild(position);
+        experienceItem.appendChild(year);
+        experienceItem.appendChild(description);
+        experienceContainer.appendChild(experienceItem);
+    });
 }
 
-// Memanggil semua fungsi saat halaman dimuat
+// Menampilkan warna latar belakang acak dan pesan selamat datang saat halaman dimuat
 window.onload = function() {
     changeBackgroundColor();
-    showWelcomeMessage(); // Panggil fungsi pesan sambutan
-    displayProjects();     // Panggil fungsi untuk menampilkan proyek
-    displayExperience();   // Panggil fungsi untuk menampilkan pengalaman
+    showWelcomeMessage();
+    displayProjects();    // Menampilkan daftar proyek
+    displayExperience();  // Menampilkan daftar pengalaman
 };
