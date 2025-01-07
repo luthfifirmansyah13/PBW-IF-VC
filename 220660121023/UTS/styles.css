@@ -1,0 +1,110 @@
+/* Custom Styles */
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Add shadow and smooth transitions for Todo list items */
+#todo-list li {
+    transition: all 0.3s ease-in-out;
+}
+
+#todo-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add focus ring on input fields */
+input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Style for completed Todo items */
+#todo-list li.completed {
+    background-color: #d1fae5; /* Light green */
+    text-decoration: line-through;
+    color: #6b7280; /* Dark gray */
+    opacity: 0.7;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Animation effect for adding a new Todo */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to new list items */
+#todo-list li {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Additional custom styles for buttons */
+button.delete-btn {
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.delete-btn:hover {
+    background-color: #e11d48; /* Red */
+}
+
+button.edit-btn {
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.edit-btn:hover {
+    background-color: #f59e0b; /* Yellow */
+}
+
+/* Style input field on focus */
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* Shadow effect for the container */
+.todo-container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Rounded corners and soft background for task item */
+#todo-list li {
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style for completed tasks with a lighter background */
+#todo-list li.completed {
+    background-color: #d1fae5; /* Light green */
+}
+
+/* Smooth transition for editing and deleting buttons */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Add a soft shadow to the input box */
+input[type="text"] {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
