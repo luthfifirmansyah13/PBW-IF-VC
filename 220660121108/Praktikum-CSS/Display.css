@@ -1,0 +1,110 @@
+/* 01 Block */
+/* element div akan menempati satu baris penuh pada halaman web dan memiliki lebar 200px serta tinggi 100px */
+div {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #f5f5f5;
+  }
+
+  /* <!DOCTYPE html>
+  <html lang="id">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contoh Div</title>
+        <style>
+           /* Element div akan menempati satu baris penuh pada halaman web dan memiliki lebar 200px serta tinggi 100px */
+           div {
+           display: block;
+           /* Menampilkan sebagai blok */
+           width: 200px;
+           /* Lebar 200px */
+           height: 100px;
+           /* Tinggi 100px */
+           background-color: #f5f5f5;
+           /* Warna latar belakang */
+           }
+        </style>
+     </head>
+     <body>
+        <h1>Contoh Elemen Div</h1>
+        <div>Ini adalah div pertama</div>
+        <div>Ini adalah div kedua</div>
+     </body>
+  </html> */
+
+
+/* 02 Inline */
+/* elemen a akan menempati sebagian baris pada halaman web dan memiliki jarak padding 10px, border 1px solid hitam, serta latar belakang warna abu-abu */.
+a {
+    display: inline;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #f5f5f5;
+  }
+
+
+  /* <!DOCTYPE html>
+  <html lang="id">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contoh Elemen Link</title>
+        <style>
+           /* Elemen a akan menempati sebagian baris pada halaman web dan memiliki jarak padding 10px,
+           border 1px solid hitam, serta latar belakang warna abu-abu */
+           a {
+           display: inline;
+           /* Menampilkan sebagai inline, sehingga tidak menempati satu baris penuh */
+           padding: 10px;
+           /* Jarak dalam 10px */
+           border: 1px solid #000000;
+           /* Batas hitam 1px */
+           background-color: #f5f5f5;
+           /* Warna latar belakang abu-abu */
+           }
+        </style>
+     </head>
+     <body>
+        <h1>Contoh Elemen Link</h1>
+        <p>Klik <a href="#">di sini</a>untuk melihat lebih lanjut. </p>
+        <p>Kunjungi <a href="#">halaman kami</a>untuk informasi lebih lanjut. </p>
+     </body>
+  </html> */
+
+
+/* 03 None */
+/* elemen input dengan tipe submit tidak akan ditampilkan pada halaman web */
+input[type="submit"] {
+    display: none;
+  }
+
+  /* <!DOCTYPE html>
+  <html lang="id">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contoh Input Submit Tersembunyi</title>
+        <style>
+           /* Elemen input dengan tipe submit tidak akan ditampilkan pada halaman web */
+           input[type="submit"] {
+           display: none; /* Menyembunyikan tombol submit */
+           }
+        </style>
+     </head>
+     <body>
+        <h1>Contoh Form dengan Tombol Submit Tersembunyi</h1>
+        <form action="#" method="post">
+           <label for="name">Nama:</label>
+           <input type="text" id="name" name="name" required>
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required>
+           <input type="submit" value="Kirim">
+        </form>
+        <p>Tombol submit tidak terlihat, tetapi form tetap bisa dikirim menggunakan JavaScript atau metode lainnya.</p>
+     </body>
+  </html> */
+
+
+

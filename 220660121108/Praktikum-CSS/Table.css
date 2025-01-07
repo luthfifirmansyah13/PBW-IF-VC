@@ -1,0 +1,48 @@
+/* 01 border-coollapse */
+/* batas sel pada tabel akan digabungkan sehingga tampilan tabel menjadi lebih rapi dan mudah dibaca */
+table {
+    border-collapse: collapse;
+  }
+
+
+/* 02 border-spacing */
+/* jarak antar sel pada tabel akan diatur sebesar 5 px */
+table {
+    border-spacing: 5px;
+  }
+
+
+/* 03 background-color */
+/* sel pada tabel akan menggunkan warna abu-abu */
+td {
+    background-color: #f5f5f5;
+  }
+  
+  /* baris ganjil pada tabel akan menggunakan warna abu-abu yang lebih terang */
+  tr:nth-child(odd) {
+    background-color: #e0e0e0;
+  }
+
+
+/* 04 text-align */
+/* teks pada sel akan di beri poisi tengah */
+td {
+    text-align: center;
+  }
+  
+  /* teks pada baris header tabel akan diberi posisi kiri */
+  th {
+    text-align: left;
+  }
+
+
+/* 05 font-size */
+/* teks pada sel akan memiliki ukuran 14px */
+td {
+    font-size: 14px;
+  }
+  
+  /* teks pada baris header tabel akan memiliki ukuran 16px */
+  th {
+    font-size: 16px;
+  }
