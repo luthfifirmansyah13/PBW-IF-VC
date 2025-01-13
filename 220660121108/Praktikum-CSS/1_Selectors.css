@@ -1,0 +1,48 @@
+/* 01 Selector Element */
+/* Mengatur style pada elemen h1 */
+h1 {
+    color: blue;
+  }
+
+
+/* 02 Selector ID */
+/* Mengatur style pada elemen dengan id "header" */
+#header {
+    background-color: gray;
+  }
+
+
+/* 03 Selector Class */
+/* Mengatur style pada elemen dengan class "teks" */
+.teks {
+    font-size: 16px;
+  }
+
+
+/* 04 Selector Universal */
+/* Mengatur margin dan padding pada semua elemen HTML */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* 05 Selector Group */
+/* Mengatur style pada elemen h1 dan h2 */
+h1, h2 {
+    color: red;
+  }
+
+
+/* 06 Selector Descandant */
+/* Mengatur style pada elemen p yang berada di dalam elemen div */
+div p {
+    font-weight: bold;
+  }
+
+
+/* 07 Selector Child */
+/* Mengatur style pada elemen ul yang menjadi anak langsung dari elemen div */
+div > ul {
+    list-style: none;
+  }
