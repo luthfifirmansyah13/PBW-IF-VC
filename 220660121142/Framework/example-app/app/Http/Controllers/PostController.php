@@ -21,11 +21,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        // Mengambil semua data post dari database
-        $posts = Post::all();
-
-        // Menggunakan Inertia untuk merender tampilan 'Post/Index' dan mengirimkan data posts
-        return Inertia::render('Post/Index', ['posts' => $posts]);
+        // Menggunakan Inertia untuk merender tampilan 'Posts/Index' dan mengirimkan data posts
+        return Inertia::render('Posts/Index', [
+            'posts' => Post::latest()->get()
+        ]);
     }
 
     /**
@@ -35,8 +34,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        // Menggunakan Inertia untuk merender tampilan 'Post/Create' untuk membuat post baru
-        return Inertia::render('Post/Create');
+        // Menggunakan Inertia untuk merender tampilan 'Posts/Create' untuk membuat post baru
+        return Inertia::render('Posts/Create');
     }
 
     /**
@@ -46,14 +45,31 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        // Membuat instance baru dari model Post dan mengisi kolom dengan data yang dikirimkan
-        $post = new Post($request->all());
+        // Melakukan validasi data yang dikirimkan
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'content' => 'required'
+        ]);
 
-        // Menyimpan data post baru ke database
-        $post->save();
+        // Membuat instance baru dari model Post dan mengisi kolom dengan data yang divalidasi
+        Post::create($validated);
 
-        // Mengarahkan pengguna ke halaman daftar post (index)
-        return redirect()->route('posts.index');
+        // Mengarahkan pengguna ke halaman daftar post (index) dengan pesan sukses
+        return redirect()->route('posts.index')
+            ->with('message', 'Post created successfully.');
+    }
+
+    /**
+     * Menampilkan post yang dipilih.
+     *
+     * @return response()
+     */
+    public function show(Post $post)
+    {
+        // Menggunakan Inertia untuk merender tampilan 'Posts/Show' dan mengirimkan data post yang ingin ditampilkan
+        return Inertia::render('Posts/Show', [
+            'post' => $post
+        ]);
     }
 
     /**
@@ -63,8 +79,10 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        // Menggunakan Inertia untuk merender tampilan 'Post/Edit' dan mengirimkan data post yang ingin diedit
-        return Inertia::render('Post/Edit', ['post' => $post]);
+        // Menggunakan Inertia untuk merender tampilan 'Posts/Edit' dan mengirimkan data post yang ingin diedit
+        return Inertia::render('Posts/Edit', [
+            'post' => $post
+        ]);
     }
 
     /**
@@ -74,11 +92,18 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        // Memperbarui data post dengan data yang dikirimkan melalui request
-        $post->update($request->all());
+        // Melakukan validasi data yang dikirimkan
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'content' => 'required'
+        ]);
 
-        // Mengarahkan pengguna kembali ke halaman daftar post setelah pembaruan
-        return redirect()->route('posts.index');
+        // Memperbarui data post dengan data yang divalidasi
+        $post->update($validated);
+
+        // Mengarahkan pengguna kembali ke halaman daftar post dengan pesan sukses
+        return redirect()->route('posts.index')
+            ->with('message', 'Post updated successfully.');
     }
 
     /**
@@ -91,7 +116,8 @@ class PostController extends Controller
         // Menghapus post yang dipilih dari database
         $post->delete();
 
-        // Mengarahkan pengguna kembali ke halaman sebelumnya (biasanya daftar post)
-        return redirect()->back();
+        // Mengarahkan pengguna kembali ke halaman daftar post dengan pesan sukses
+        return redirect()->route('posts.index')
+            ->with('message', 'Post deleted successfully.');
     }
 }
