@@ -21,8 +21,8 @@ return new class extends Migration
             // Menambahkan kolom 'title' yang bertipe string (biasanya untuk judul)
             $table->string('title');
             
-            // Menambahkan kolom 'body' yang bertipe text (untuk konten atau tubuh artikel)
-            $table->text('body');
+            // Menambahkan kolom 'content' yang bertipe text (untuk konten atau tubuh artikel)
+            $table->text('content');
             
             // Menambahkan kolom timestamps yang akan otomatis menambahkan kolom 'created_at' dan 'updated_at'
             $table->timestamps();

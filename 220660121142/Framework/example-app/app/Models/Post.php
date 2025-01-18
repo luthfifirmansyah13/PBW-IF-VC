@@ -17,6 +17,6 @@ class Post extends Model
   
     // Menentukan kolom mana yang dapat diisi (mass assignment) untuk model ini
     protected $fillable = [
-        'title', 'body' // Kolom 'title' dan 'body' dapat diisi secara massal
+        'title', 'content' // Kolom 'title' dan 'content' dapat diisi secara massal
     ];
 }
